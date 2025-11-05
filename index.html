@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="todo-card" aria-labelledby="app-title">
+        <header class="todo-card__header">
+          <h1 id="app-title" class="todo-title">Todo List</h1>
+          <p class="todo-subtitle">Stay organized. Add, complete, and track your tasks.</p>
+        </header>
+
+        <form id="todo-form" class="todo-form" autocomplete="off" aria-label="Add a new task">
+          <div class="input-group">
+            <input
+              id="todo-input"
+              class="text-input"
+              type="text"
+              name="task"
+              placeholder="What do you need to do?"
+              aria-label="Task description"
+              required
+              maxlength="120"
+            />
+            <button type="submit" class="btn btn--primary" aria-label="Add task">
+              <span class="btn__icon" aria-hidden="true">＋</span>
+              <span class="btn__text">Add</span>
+            </button>
+          </div>
+        </form>
+
+        <ul id="todo-list" class="todo-list" aria-live="polite" aria-label="Todo items"></ul>
+
+        <footer class="todo-footer">
+          <span id="todo-count" class="todo-count" aria-live="polite"></span>
+          <button id="clear-completed" class="btn btn--ghost" type="button">Clear completed</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
