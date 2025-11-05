@@ -26,3 +26,6 @@ Users can add tasks, mark them completed, delete them, and all tasks are saved u
 ---
 
 ## 📂 Project Structure
+---
+## URL 
+https://med-kalai.github.io/todo-app/
